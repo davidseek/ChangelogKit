@@ -22,7 +22,7 @@ pod 'ChangelogKit'
 
 ## Author
 
-davidseek, dseek@amazon.com
+davidseek, david@davidseek.com
 
 ## License
 
