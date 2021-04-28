@@ -1,9 +1,6 @@
 name: deploy_to_cocoapods
 
-on:
-  push:
-    tags:
-      - '*'
+on: push
 
 jobs:
   build:
