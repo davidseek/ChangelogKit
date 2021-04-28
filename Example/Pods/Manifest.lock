@@ -1,0 +1,16 @@
+PODS:
+  - ChangelogKit (0.1.0)
+
+DEPENDENCIES:
+  - ChangelogKit (from `../`)
+
+EXTERNAL SOURCES:
+  ChangelogKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ChangelogKit: 804a0c7aa0398f25e8ddf9e9606cb5592cb22fad
+
+PODFILE CHECKSUM: 3a0b64bfe1be262873d0f3ec5a5c83a28748934d
+
+COCOAPODS: 1.10.1

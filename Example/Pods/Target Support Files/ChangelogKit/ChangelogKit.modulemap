@@ -1,0 +1,6 @@
+framework module ChangelogKit {
+  umbrella header "ChangelogKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
