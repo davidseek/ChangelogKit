@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## ChangelogKit
 
-Copyright (c) 2021 davidseek <dseek@amazon.com>
+Copyright (c) 2021 davidseek <david@davidseek.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

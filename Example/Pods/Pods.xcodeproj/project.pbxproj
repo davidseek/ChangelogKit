@@ -7,27 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		011C895A1F75C56FFF5C2CF0DA088901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0EF6166A46B9F575F99B979140260DC4 /* ChangelogKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C5DE1FD7056B29FD96F64F771AA2B54 /* ChangelogKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40B4FBA7E91E540DADCAC8DF97CCD2E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		4D54F67FA45DA4A7E910AB769C46B52F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		5152811FAB604ABEC70ACD29807B3E71 /* Pods-ChangelogKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3F6F7C10A40A4E668F0BEC1F2EF98 /* Pods-ChangelogKit_Tests-dummy.m */; };
 		5391CF4F9D0B7C27DF25255C6B6404C6 /* Pods-ChangelogKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BF5B06C261E3DBBD7D7038C444D9B9B /* Pods-ChangelogKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7595E2E0F8427AA980E1320FEC0C04D1 /* ChangelogKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB4F3F5A5302963C57B8D182C44C2E0 /* ChangelogKit-dummy.m */; };
-		801F3502ACE70E2CA3E568ECA6A4B96A /* ChangelogKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8CF8782B4D8F748AA51CC22CAB169E8 /* ChangelogKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AF73B33E9EF9F9070ED6D0E6FE33AB5 /* WebViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 96B330FBA0C16C4E02C396DF3949DE31 /* WebViewController.xib */; };
+		87BF1547363A46559147D4CC102CD803 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3C8916B0401707E76B4B80874DAD6 /* BannerView.swift */; };
+		89610B007CB271CE45FF659F550E8ECC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64412A8633E7702CD8937D882AA214 /* WebViewController.swift */; };
 		947EB6D3B6393A937608D2515B2DA736 /* Pods-ChangelogKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 176D6FE354EAB20F99984042AEF71683 /* Pods-ChangelogKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2F381DC40B806093EF1FB8E113C1274 /* BannerView.xib in Sources */ = {isa = PBXBuildFile; fileRef = B1594F694C8C3046CFAAAEBD7EE2AE7A /* BannerView.xib */; };
 		AC4DDC1888168E9C9399F29AA967DEE6 /* Pods-ChangelogKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B094E253DA2230E32B8B0717DE33782C /* Pods-ChangelogKit_Example-dummy.m */; };
-		CDC91BE03C861DF7707A134A113B845D /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43222ACE1977C3E533706FDA3898D539 /* ReplaceMe.swift */; };
+		AE9D281FFE80C9ABD11BF75107EDB03A /* ChangelogKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0555603BF5B9D66861D14F18B927FC2 /* ChangelogKit.swift */; };
 		D2E603646A87A06B93C6862772697E05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E37B2B8EB9484ADEF1A584923036832C /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31566ABF6FDBAF2D6BAB9C0087979A54 /* Log.swift */; };
+		ECE49209A4752152C04A8E696A6072E5 /* ChangelogKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1750FFB00B7953E267C1EB6BC2595E3 /* ChangelogKit-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		757A0CC00E1F4C490991FD82A0BD0DB4 /* PBXContainerItemProxy */ = {
+		02B3E050BABF11465E99AE04AEF53DD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 500B785236CA9B93299BAAAB59320DD1;
 			remoteInfo = ChangelogKit;
 		};
-		A40B0D73BA72985BD509C9F88D1CFB2A /* PBXContainerItemProxy */ = {
+		DABD2D55F33EC100F319450FEA79A4D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -37,39 +42,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DD4DAD82E8A70E3B016730F7A3896CB /* ChangelogKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChangelogKit.modulemap; sourceTree = "<group>"; };
+		12C269EA5BC9580E7157048F42CA23CA /* ChangelogKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChangelogKit.release.xcconfig; sourceTree = "<group>"; };
 		16722039BCEF27540ABEDCB9AB4B3FBC /* Pods-ChangelogKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChangelogKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		176D6FE354EAB20F99984042AEF71683 /* Pods-ChangelogKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChangelogKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		28982C7872B8AFC0DBD3B3EC3E2C7301 /* Pods-ChangelogKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChangelogKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		34ABF882A2A6C5BEC068B1E0479C3858 /* ChangelogKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChangelogKit.debug.xcconfig; sourceTree = "<group>"; };
+		31566ABF6FDBAF2D6BAB9C0087979A54 /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = ChangelogKit/Classes/Log.swift; sourceTree = "<group>"; };
 		3DD3429EC8D261E1F3A1205A738417C9 /* Pods-ChangelogKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChangelogKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3E082098F4BBF9A54092201CF3091AC8 /* ChangelogKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChangelogKit.release.xcconfig; sourceTree = "<group>"; };
-		43222ACE1977C3E533706FDA3898D539 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ChangelogKit/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		4431A40E05DA6A0F6BF889C38803BE6F /* Pods-ChangelogKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChangelogKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5A8370D02740B61E625C56738A3AD1A2 /* ChangelogKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ChangelogKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5F85B31F88FB3B412E45074DB50919D6 /* Pods-ChangelogKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChangelogKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6CC3F6F7C10A40A4E668F0BEC1F2EF98 /* Pods-ChangelogKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChangelogKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		6D88DCB97CCE0289875CE3D4628EB753 /* Pods-ChangelogKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChangelogKit_Example-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		73D0480D324A383446DFDCDFF1B039E3 /* Pods_ChangelogKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ChangelogKit_Tests.framework; path = "Pods-ChangelogKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74AB0442B8687F373FFD0B7A1B0941B0 /* Pods-ChangelogKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChangelogKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		75F9BDFD7BDA04EF27EC84896052C081 /* ChangelogKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChangelogKit-Info.plist"; sourceTree = "<group>"; };
 		7BF5B06C261E3DBBD7D7038C444D9B9B /* Pods-ChangelogKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChangelogKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8A197F3407A41938EF2229CDB73E13C7 /* Pods-ChangelogKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChangelogKit_Example.modulemap"; sourceTree = "<group>"; };
+		96B330FBA0C16C4E02C396DF3949DE31 /* WebViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		9C53297A5202B280B06F1401D37C0ACC /* Pods-ChangelogKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChangelogKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9C5DE1FD7056B29FD96F64F771AA2B54 /* ChangelogKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChangelogKit-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A8BC37B8DD2B185E980DF481E1BC5698 /* Pods-ChangelogKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChangelogKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ADF3C8916B0401707E76B4B80874DAD6 /* BannerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		AF467547DA5BCB8EF4BBB52A6202EDDB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		B094E253DA2230E32B8B0717DE33782C /* Pods-ChangelogKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChangelogKit_Example-dummy.m"; sourceTree = "<group>"; };
 		B116CB74E938629CE7E3BCACE1611BF9 /* ChangelogKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChangelogKit.framework; path = ChangelogKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B20E3B543E2164B98729ACD554B05D6A /* ChangelogKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ChangelogKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B8A4F504DC890531866F0720736D81DB /* ChangelogKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChangelogKit-Info.plist"; sourceTree = "<group>"; };
+		B1594F694C8C3046CFAAAEBD7EE2AE7A /* BannerView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = BannerView.xib; sourceTree = "<group>"; };
+		B1750FFB00B7953E267C1EB6BC2595E3 /* ChangelogKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChangelogKit-dummy.m"; sourceTree = "<group>"; };
 		C69BC89959B18F347319ED628DDFD7B8 /* Pods-ChangelogKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChangelogKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CAEA256A1795201A96FB7ACBB37D7967 /* Pods-ChangelogKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChangelogKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		CB4A60F9DA989898D46294FF4DE56262 /* Pods_ChangelogKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ChangelogKit_Example.framework; path = "Pods-ChangelogKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2567924B3BD280C34280057807AEC1A /* ChangelogKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChangelogKit.modulemap; sourceTree = "<group>"; };
-		DF056B00A3AC0304F02BF4F817A0FF9A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		F1102DDA0D31602E2457B9DD8F4BCA4B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D025234DBF0B5F36740E350A70FBC1AC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E0555603BF5B9D66861D14F18B927FC2 /* ChangelogKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChangelogKit.swift; path = ChangelogKit/Classes/ChangelogKit.swift; sourceTree = "<group>"; };
+		E771DEC0CBDEE972817FBC47E378B2E7 /* ChangelogKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChangelogKit.debug.xcconfig; sourceTree = "<group>"; };
+		E7B93D7EF009C99A196F6FA484B4F810 /* ChangelogKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChangelogKit-prefix.pch"; sourceTree = "<group>"; };
 		F5A0F3E36C60EF27EB1AE1666454BD68 /* Pods-ChangelogKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChangelogKit_Tests.modulemap"; sourceTree = "<group>"; };
-		F8CF8782B4D8F748AA51CC22CAB169E8 /* ChangelogKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChangelogKit-umbrella.h"; sourceTree = "<group>"; };
-		FC254DB3D15F6E8A95C0B9FF6C7F2D96 /* ChangelogKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChangelogKit-prefix.pch"; sourceTree = "<group>"; };
-		FFB4F3F5A5302963C57B8D182C44C2E0 /* ChangelogKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChangelogKit-dummy.m"; sourceTree = "<group>"; };
+		FA64412A8633E7702CD8937D882AA214 /* WebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +91,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99A53C06B839653E774D7CFBBCC15471 /* Frameworks */ = {
+		A4E5AF6877318B713B2606150F2A36B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011C895A1F75C56FFF5C2CF0DA088901 /* Foundation.framework in Frameworks */,
+				40B4FBA7E91E540DADCAC8DF97CCD2E7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +110,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A886BEF9EEC2B4A377AD294FEB8D339 /* ChangelogKit */ = {
+			isa = PBXGroup;
+			children = (
+				E0555603BF5B9D66861D14F18B927FC2 /* ChangelogKit.swift */,
+				31566ABF6FDBAF2D6BAB9C0087979A54 /* Log.swift */,
+				8784D8719E5C9F519BDD4AD4EEF5584A /* Pod */,
+				CD53995790D71E65CF75268D636AD3A1 /* Support Files */,
+				9F6281D3B4C2EC37CD913DD3F7BD7253 /* Views */,
+			);
+			name = ChangelogKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		0C02293A9DC5BAE70C54AA3ADD550338 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A886BEF9EEC2B4A377AD294FEB8D339 /* ChangelogKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		238AC760A9DBF88F537B657FE5D789C3 /* Pods-ChangelogKit_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,17 +166,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		64485B559E0A8A10CBFBEF4845F623D3 /* ChangelogKit */ = {
-			isa = PBXGroup;
-			children = (
-				43222ACE1977C3E533706FDA3898D539 /* ReplaceMe.swift */,
-				7DB214821CF2835C239C9203E3FB5EBA /* Pod */,
-				E4C9368B447093E4C1954C41E312EF08 /* Support Files */,
-			);
-			name = ChangelogKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		6561BA5F086761B8C6EF72780D69B766 /* Pods-ChangelogKit_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,14 +182,26 @@
 			path = "Target Support Files/Pods-ChangelogKit_Tests";
 			sourceTree = "<group>";
 		};
-		7DB214821CF2835C239C9203E3FB5EBA /* Pod */ = {
+		8784D8719E5C9F519BDD4AD4EEF5584A /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				B20E3B543E2164B98729ACD554B05D6A /* ChangelogKit.podspec */,
-				DF056B00A3AC0304F02BF4F817A0FF9A /* LICENSE */,
-				F1102DDA0D31602E2457B9DD8F4BCA4B /* README.md */,
+				5A8370D02740B61E625C56738A3AD1A2 /* ChangelogKit.podspec */,
+				AF467547DA5BCB8EF4BBB52A6202EDDB /* LICENSE */,
+				D025234DBF0B5F36740E350A70FBC1AC /* README.md */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		9F6281D3B4C2EC37CD913DD3F7BD7253 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADF3C8916B0401707E76B4B80874DAD6 /* BannerView.swift */,
+				B1594F694C8C3046CFAAAEBD7EE2AE7A /* BannerView.xib */,
+				FA64412A8633E7702CD8937D882AA214 /* WebViewController.swift */,
+				96B330FBA0C16C4E02C396DF3949DE31 /* WebViewController.xib */,
+			);
+			name = Views;
+			path = ChangelogKit/Classes/Views;
 			sourceTree = "<group>";
 		};
 		A8787EDF993BD16E5CC626FF0E59E1C6 /* Targets Support Files */ = {
@@ -181,19 +213,26 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A9B16A17AD0D2D5ECCA19B928402D3C4 /* Development Pods */ = {
+		CD53995790D71E65CF75268D636AD3A1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				64485B559E0A8A10CBFBEF4845F623D3 /* ChangelogKit */,
+				0DD4DAD82E8A70E3B016730F7A3896CB /* ChangelogKit.modulemap */,
+				B1750FFB00B7953E267C1EB6BC2595E3 /* ChangelogKit-dummy.m */,
+				75F9BDFD7BDA04EF27EC84896052C081 /* ChangelogKit-Info.plist */,
+				E7B93D7EF009C99A196F6FA484B4F810 /* ChangelogKit-prefix.pch */,
+				9C5DE1FD7056B29FD96F64F771AA2B54 /* ChangelogKit-umbrella.h */,
+				E771DEC0CBDEE972817FBC47E378B2E7 /* ChangelogKit.debug.xcconfig */,
+				12C269EA5BC9580E7157048F42CA23CA /* ChangelogKit.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ChangelogKit";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				A9B16A17AD0D2D5ECCA19B928402D3C4 /* Development Pods */,
+				0C02293A9DC5BAE70C54AA3ADD550338 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				43619018D9177D07699D9ACA91393A4B /* Products */,
 				A8787EDF993BD16E5CC626FF0E59E1C6 /* Targets Support Files */,
@@ -208,29 +247,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E4C9368B447093E4C1954C41E312EF08 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D2567924B3BD280C34280057807AEC1A /* ChangelogKit.modulemap */,
-				FFB4F3F5A5302963C57B8D182C44C2E0 /* ChangelogKit-dummy.m */,
-				B8A4F504DC890531866F0720736D81DB /* ChangelogKit-Info.plist */,
-				FC254DB3D15F6E8A95C0B9FF6C7F2D96 /* ChangelogKit-prefix.pch */,
-				F8CF8782B4D8F748AA51CC22CAB169E8 /* ChangelogKit-umbrella.h */,
-				34ABF882A2A6C5BEC068B1E0479C3858 /* ChangelogKit.debug.xcconfig */,
-				3E082098F4BBF9A54092201CF3091AC8 /* ChangelogKit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ChangelogKit";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		014F2AFB617A0E7B3278591008C4856C /* Headers */ = {
+		BAEDE92FA6D9DA3B93474004A79CC53B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				801F3502ACE70E2CA3E568ECA6A4B96A /* ChangelogKit-umbrella.h in Headers */,
+				0EF6166A46B9F575F99B979140260DC4 /* ChangelogKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,12 +279,12 @@
 /* Begin PBXNativeTarget section */
 		500B785236CA9B93299BAAAB59320DD1 /* ChangelogKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E758AB85D3578073D92BA8C20692E32 /* Build configuration list for PBXNativeTarget "ChangelogKit" */;
+			buildConfigurationList = 31C776EB0E75EF8748A06594164EE126 /* Build configuration list for PBXNativeTarget "ChangelogKit" */;
 			buildPhases = (
-				014F2AFB617A0E7B3278591008C4856C /* Headers */,
-				FA4F9ECEB1458953B11B2C477E8B9B55 /* Sources */,
-				99A53C06B839653E774D7CFBBCC15471 /* Frameworks */,
-				273CB27B8F5A24AD9FD5EEA9E9CB1520 /* Resources */,
+				BAEDE92FA6D9DA3B93474004A79CC53B /* Headers */,
+				99B95F5B55BC1BB32B5A91E0ABF3BD1D /* Sources */,
+				A4E5AF6877318B713B2606150F2A36B2 /* Frameworks */,
+				A149408755E3A40FBF81F4779BCF167F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -283,7 +307,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E8AF04D3A26451B6C0E736D64E121503 /* PBXTargetDependency */,
+				21C2A2BC3D4407D34A9A065CA9BEA9B3 /* PBXTargetDependency */,
 			);
 			name = "Pods-ChangelogKit_Tests";
 			productName = "Pods-ChangelogKit_Tests";
@@ -302,7 +326,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				92C43E67E20E8B75B839F41C64D2E959 /* PBXTargetDependency */,
+				C8FE490ACFCB4B04F768CB42AEC108D8 /* PBXTargetDependency */,
 			);
 			name = "Pods-ChangelogKit_Example";
 			productName = "Pods-ChangelogKit_Example";
@@ -346,14 +370,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		273CB27B8F5A24AD9FD5EEA9E9CB1520 /* Resources */ = {
+		7A6DB1F6F57A493FF010B462A05CB23C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A6DB1F6F57A493FF010B462A05CB23C /* Resources */ = {
+		A149408755E3A40FBF81F4779BCF167F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,6 +395,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99B95F5B55BC1BB32B5A91E0ABF3BD1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87BF1547363A46559147D4CC102CD803 /* BannerView.swift in Sources */,
+				A2F381DC40B806093EF1FB8E113C1274 /* BannerView.xib in Sources */,
+				ECE49209A4752152C04A8E696A6072E5 /* ChangelogKit-dummy.m in Sources */,
+				AE9D281FFE80C9ABD11BF75107EDB03A /* ChangelogKit.swift in Sources */,
+				E37B2B8EB9484ADEF1A584923036832C /* Log.swift in Sources */,
+				89610B007CB271CE45FF659F550E8ECC /* WebViewController.swift in Sources */,
+				5AF73B33E9EF9F9070ED6D0E6FE33AB5 /* WebViewController.xib in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D240DCFD125AD2EBD8A2295A846F6D48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,29 +417,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA4F9ECEB1458953B11B2C477E8B9B55 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7595E2E0F8427AA980E1320FEC0C04D1 /* ChangelogKit-dummy.m in Sources */,
-				CDC91BE03C861DF7707A134A113B845D /* ReplaceMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		92C43E67E20E8B75B839F41C64D2E959 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ChangelogKit;
-			target = 500B785236CA9B93299BAAAB59320DD1 /* ChangelogKit */;
-			targetProxy = 757A0CC00E1F4C490991FD82A0BD0DB4 /* PBXContainerItemProxy */;
-		};
-		E8AF04D3A26451B6C0E736D64E121503 /* PBXTargetDependency */ = {
+		21C2A2BC3D4407D34A9A065CA9BEA9B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ChangelogKit_Example";
 			target = ECCBE96AD9EF9F36F826EB874E3E3728 /* Pods-ChangelogKit_Example */;
-			targetProxy = A40B0D73BA72985BD509C9F88D1CFB2A /* PBXContainerItemProxy */;
+			targetProxy = DABD2D55F33EC100F319450FEA79A4D2 /* PBXContainerItemProxy */;
+		};
+		C8FE490ACFCB4B04F768CB42AEC108D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ChangelogKit;
+			target = 500B785236CA9B93299BAAAB59320DD1 /* ChangelogKit */;
+			targetProxy = 02B3E050BABF11465E99AE04AEF53DD1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -472,6 +501,37 @@
 			};
 			name = Debug;
 		};
+		4BA4FF1DB72CDDCFA856287F3AD7ADA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E771DEC0CBDEE972817FBC47E378B2E7 /* ChangelogKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ChangelogKit/ChangelogKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChangelogKit/ChangelogKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChangelogKit/ChangelogKit.modulemap";
+				PRODUCT_MODULE_NAME = ChangelogKit;
+				PRODUCT_NAME = ChangelogKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		59E72248202AB15CFCE9B3B95ED1E102 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28982C7872B8AFC0DBD3B3EC3E2C7301 /* Pods-ChangelogKit_Example.release.xcconfig */;
@@ -504,67 +564,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		655B44C505F8624EACDCDC82140A8BDC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E082098F4BBF9A54092201CF3091AC8 /* ChangelogKit.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ChangelogKit/ChangelogKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ChangelogKit/ChangelogKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ChangelogKit/ChangelogKit.modulemap";
-				PRODUCT_MODULE_NAME = ChangelogKit;
-				PRODUCT_NAME = ChangelogKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6CC8B94086A8FA1375FFAB633E086B3F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34ABF882A2A6C5BEC068B1E0479C3858 /* ChangelogKit.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ChangelogKit/ChangelogKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ChangelogKit/ChangelogKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ChangelogKit/ChangelogKit.modulemap";
-				PRODUCT_MODULE_NAME = ChangelogKit;
-				PRODUCT_NAME = ChangelogKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		86250E4E8F4B3BEC83F94F68654CAA74 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -725,6 +724,38 @@
 			};
 			name = Debug;
 		};
+		F11D64175DECD759C8B8FBC91987ED8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12C269EA5BC9580E7157048F42CA23CA /* ChangelogKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ChangelogKit/ChangelogKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChangelogKit/ChangelogKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChangelogKit/ChangelogKit.modulemap";
+				PRODUCT_MODULE_NAME = ChangelogKit;
+				PRODUCT_NAME = ChangelogKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -733,6 +764,15 @@
 			buildConfigurations = (
 				F0685FB8EB58CD44810240FC2C134FDF /* Debug */,
 				86250E4E8F4B3BEC83F94F68654CAA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31C776EB0E75EF8748A06594164EE126 /* Build configuration list for PBXNativeTarget "ChangelogKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA4FF1DB72CDDCFA856287F3AD7ADA4 /* Debug */,
+				F11D64175DECD759C8B8FBC91987ED8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -751,15 +791,6 @@
 			buildConfigurations = (
 				C03282584C5DC510354460DCF18425FC /* Debug */,
 				59E72248202AB15CFCE9B3B95ED1E102 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9E758AB85D3578073D92BA8C20692E32 /* Build configuration list for PBXNativeTarget "ChangelogKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6CC8B94086A8FA1375FFAB633E086B3F /* Debug */,
-				655B44C505F8624EACDCDC82140A8BDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
