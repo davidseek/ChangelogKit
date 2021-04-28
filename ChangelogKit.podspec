@@ -31,6 +31,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
 
   s.source_files = 'ChangelogKit/Classes/**/*'
+
+  s.swift_version = '4.0'
   
   # s.resource_bundles = {
   #   'ChangelogKit' => ['ChangelogKit/Assets/*.png']
