@@ -1,0 +1,2 @@
+- name: Deploy to Cocoapod Action
+  uses: michaelhenry/deploy-to-cocoapods-github-action@1.0.10
