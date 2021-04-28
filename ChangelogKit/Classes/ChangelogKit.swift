@@ -83,7 +83,7 @@ public class ChangelogKit {
         
         DispatchQueue.main.async {
             controller.view.addSubview(banner)
-            controller.view.bringSubviewToFront(banner)
+            controller.view.bringSubview(toFront: banner)
         }
         
         Log.info("Did display banner")
