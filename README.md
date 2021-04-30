@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/ChangelogKit.svg?style=flat)](https://cocoapods.org/pods/ChangelogKit)
 [![Platform](https://img.shields.io/cocoapods/p/ChangelogKit.svg?style=flat)](https://cocoapods.org/pods/ChangelogKit)
 
+ChangelogKit is a simple drop project. It provides an API to define a changelog website URL, and an API to call the kit's execution. 
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
