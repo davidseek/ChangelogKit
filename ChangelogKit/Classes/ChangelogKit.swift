@@ -72,6 +72,7 @@ public class ChangelogKit {
 
         if forced {
             presentChangelog()
+            setVersionSeen()
         } else {
             presentBanner(on: controller)
         }
