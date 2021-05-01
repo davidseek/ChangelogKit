@@ -10,6 +10,10 @@ import UIKit
 /// Just needed to point to current bundle
 class BundleCatch {}
 
+private enum Constants {
+    static let buttonInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+}
+
 enum BannerViewAction {
     case didPressDismissButton
     case didPressActionButton
@@ -62,6 +66,7 @@ class BannerView: UIView, Nib {
     }
 }
 
+/// Convenience extension for the size of the Banner
 extension CGRect {
     public static var nib: CGRect {
         let screen = UIScreen.main.bounds
@@ -69,24 +74,33 @@ extension CGRect {
     }
 }
 
+/// Convenience protocol to init a UIView
 protocol Nib {
     func register()
 }
 
+/// Convenience extension to init a UIView
 extension Nib where Self : UIView {
 
     func register() {
-        
-        guard let nibName = type(of: self)
-                .description()
-                .components(separatedBy: ".").last else {
+
+        /// Get the description components
+        let components = type(of: self)
+            .description()
+            .components(separatedBy: ".")
+
+        /// Get the last element, that should be the nib name
+        guard let nibName = components.last else {
             Log.error("Can't find NIB's name")
             return
         }
-        
+
+        /// Get the current bundle using the `BundleCatch`
         let bundle = Bundle(for: type(of: self))
+        /// Load all nimbs with the desired name
         let views = bundle.loadNibNamed(nibName, owner: self, options: nil)
-        
+
+        /// Lastly we need to get the first Element
         guard let view = views?.first as? UIView else {
             Log.error("Can't find NIB in Bundle")
             return
@@ -95,5 +109,4 @@ extension Nib where Self : UIView {
         view.frame = bounds
         addSubview(view)
     }
-
 }
