@@ -22,6 +22,8 @@ override func viewDidAppear(_ animated: Bool) {
 
 ```
 
+![Screenshots](https://firebasestorage.googleapis.com/v0/b/md2site.appspot.com/o/changelogkit.png?alt=media&token=46ea2e1e-ec2a-43e9-8f1c-04ba003e9124)
+
 ## API
 
 - `useForce` 
