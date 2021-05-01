@@ -17,18 +17,46 @@ private enum Constants {
     static let bannerText = "You are now using the latest update!"
 }
 
+public struct ChangelogKitTheme {
+    let navigationBarTintColor: UIColor// = .systemBlue
+    let backgroundColor: UIColor// = .white
+
+    public init(navigationBarTintColor: UIColor, backgroundColor: UIColor) {
+        self.navigationBarTintColor = navigationBarTintColor
+        self.backgroundColor = backgroundColor
+    }
+
+    public static var defaultTheme: ChangelogKitTheme {
+        if #available(iOS 13.0, *) {
+            return ChangelogKitTheme(
+                navigationBarTintColor: .systemBlue,
+                backgroundColor: .systemBackground)
+        } else {
+            return ChangelogKitTheme(
+                navigationBarTintColor: .systemBlue,
+                backgroundColor: .white)
+        }
+    }
+}
+
 public class ChangelogKit {
     
     private static let defaults = UserDefaults.standard
     private static let banner = BannerView(
         text: Constants.bannerText,
         onAction: bannerViewActionHandler)
-    
+
     private static var currentVersion: String?
     private static var controller: UIViewController?
+
+    public static var theme: ChangelogKitTheme = .defaultTheme {
+        didSet {
+            Log.error("Did set ChangelogKit theme to \(theme)")
+        }
+    }
     public static var changelogURL: String! {
         didSet {
-            Log.error("Did initialize ChangelogKit with \(changelogURL ?? "nil")")
+            Log.error("Did set ChangelogKit changelogURL to \(changelogURL ?? "nil")")
         }
     }
 
@@ -86,7 +114,7 @@ public class ChangelogKit {
             return
         }
         /// Initiate the WebView controller
-        let webController = WebViewController(url: url)
+        let webController = WebViewController(url: url, theme: theme)
         /// Set the presentation style depending the OS
         if #available(iOS 13, *) {
             webController.modalPresentationStyle = .automatic

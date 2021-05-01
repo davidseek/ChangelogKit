@@ -1,6 +1,6 @@
 {
   "name": "ChangelogKit",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "summary": "A library that offers tools to display a changelog using webviews and user defaults.",
   "description": "Using only a few lines of code, you can add a changelog for your users. The log will only ever be seen if the user is getting a new update.",
   "homepage": "https://github.com/davidseek/ChangelogKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/davidseek/ChangelogKit.git",
-    "tag": "0.1.0"
+    "tag": "0.1.5"
   },
   "social_media_url": "https://twitter.com/DavidSeek",
   "platforms": {

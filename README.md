@@ -23,9 +23,20 @@ override func viewDidAppear(_ animated: Bool) {
 ```
 
 ## API
+
 - `useForce` 
   - `true`, presents the Changelog in a modal
   - `false`, presents a banner, with action buttons. Close, and present Changelog.
+
+## Theming
+
+The `ChangelogKitTheme` object offers a simple way to customize the Changelog experience with your Application Corporate Identity.
+
+```swift
+ChangelogKit.theme = ChangelogKitTheme(
+    navigationBarTintColor: .white, 
+    backgroundColor: .black)
+```
 
 ## Example
 
@@ -42,7 +53,7 @@ pod 'ChangelogKit'
 
 ## Author
 
-davidseek, david@davidseek.com
+[David Seek](https://twitter.com/DavidSeek)
 
 ## License
 

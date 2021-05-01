@@ -18,9 +18,11 @@ private enum Constants {
 class WebViewController: UIViewController {
 
     @IBOutlet weak var webViewContainer: UIView!
+    @IBOutlet weak var theNavigationBar: UINavigationBar!
     @IBOutlet weak var theNavigationItem: UINavigationItem!
 
     private let url: URL
+    private let theme: ChangelogKitTheme
     
     private lazy var webView: WKWebView = {
         let config = getConfig()
@@ -30,11 +32,13 @@ class WebViewController: UIViewController {
         webView.allowsBackForwardNavigationGestures = false
         webView.contentMode = .scaleToFill
         webView.scrollView.delegate = webViewScrollViewDelegate.shared
+        webView.backgroundColor = theme.backgroundColor
         return webView
     }()
     
-    init(url: URL) {
+    init(url: URL, theme: ChangelogKitTheme) {
         self.url = url
+        self.theme = theme
         super.init(nibName: Constants.nibName, bundle: Bundle(for: type(of: self)))
     }
     
@@ -44,6 +48,8 @@ class WebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        view.backgroundColor = theme.backgroundColor
         
         setNavigationBar()
         setWebView()
@@ -65,6 +71,11 @@ class WebViewController: UIViewController {
             barButtonSystemItem: .done,
             target: self,
             action: #selector(doneTapped))
+
+        theNavigationBar.setBackgroundImage(UIImage(), for: .default)
+        theNavigationBar.shadowImage = UIImage()
+        theNavigationBar.isTranslucent = true
+        theNavigationBar.tintColor = theme.navigationBarTintColor
     }
 
     /// Function to bootstrap the `WKWebView`
