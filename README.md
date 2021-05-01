@@ -22,6 +22,8 @@ override func viewDidAppear(_ animated: Bool) {
 
 ```
 
+ChangelogKit uses the `UserDefaults` to determine, if the user has already seen this `AppVersion`. A banner on the top of the screen, indicating that the app has been updated to the latest version, will be shown. When the user selects `See What's New`, then a modally presented `WKWebViewController` opens, presenting the changelog that has been embedded via `URL`. 
+
 ![Screenshots](https://firebasestorage.googleapis.com/v0/b/md2site.appspot.com/o/changelogkit.png?alt=media&token=46ea2e1e-ec2a-43e9-8f1c-04ba003e9124)
 
 ## API
