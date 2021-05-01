@@ -32,7 +32,8 @@ class WebViewController: UIViewController {
         webView.allowsBackForwardNavigationGestures = false
         webView.contentMode = .scaleToFill
         webView.scrollView.delegate = webViewScrollViewDelegate.shared
-        webView.backgroundColor = theme.backgroundColor
+        webView.backgroundColor = .clear
+        webView.isOpaque = false
         return webView
     }()
     
@@ -50,6 +51,7 @@ class WebViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = theme.backgroundColor
+        webViewContainer.backgroundColor = theme.backgroundColor
         
         setNavigationBar()
         setWebView()
