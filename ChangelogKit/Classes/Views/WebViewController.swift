@@ -8,13 +8,18 @@
 import UIKit
 import WebKit
 
+private enum Constants {
+    private static let webKit = "document.documentElement.style.webkit"
+    public static let nibName = "WebViewController"
+    public static var disableSelection = "\(webKit)UserSelect='none';"
+    public static var disableCallout = "\(webKit)TouchCallout='none';"
+}
+
 class WebViewController: UIViewController {
 
     @IBOutlet weak var webViewContainer: UIView!
     @IBOutlet weak var theNavigationItem: UINavigationItem!
 
-    private let disableSelectionScriptString = "document.documentElement.style.webkitUserSelect='none';"
-    private let disableCalloutScriptString = "document.documentElement.style.webkitTouchCallout='none';"
     private let url: URL
     
     private lazy var webView: WKWebView = {
@@ -30,7 +35,7 @@ class WebViewController: UIViewController {
     
     init(url: URL) {
         self.url = url
-        super.init(nibName: "WebViewController", bundle: Bundle(for: type(of: self)))
+        super.init(nibName: Constants.nibName, bundle: Bundle(for: type(of: self)))
     }
     
     required init?(coder: NSCoder) {
@@ -40,11 +45,7 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        theNavigationItem.leftBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .done,
-            target: self,
-            action: #selector(doneTapped))
-        
+        setNavigationBar()
         setWebView()
         loadChangelog()
         resetCache()
@@ -57,7 +58,16 @@ class WebViewController: UIViewController {
     }
     
     // MARK: - Private
-    
+
+    /// Function to set a `done button` at the right side of the navigation header
+    private func setNavigationBar() {
+        theNavigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .done,
+            target: self,
+            action: #selector(doneTapped))
+    }
+
+    /// Function to bootstrap the `WKWebView`
     private func setWebView() {
         webViewContainer.addSubview(webView)
         webView.translatesAutoresizingMaskIntoConstraints = false
@@ -66,56 +76,74 @@ class WebViewController: UIViewController {
         webView.topAnchor.constraint(equalTo: webViewContainer.topAnchor).isActive = true
         webView.bottomAnchor.constraint(equalTo: webViewContainer.bottomAnchor).isActive = true
     }
-    
+
+    /// Loads the changelog into the `WKWebView`
     private func loadChangelog() {
         DispatchQueue.main.async { [weak self] in
             guard let strongSelf = self else { return }
-            strongSelf.webView.load(URLRequest(url: strongSelf.url))
+            let request = URLRequest(url: strongSelf.url)
+            strongSelf.webView.load(request)
         }
     }
-    
+
+    /// We're resetting the local `WKWebsiteDataStore` cache
+    /// to assure that we will always present the latest
+    /// and most updated Changelog, instead of a cached and outdated version
     private func resetCache() {
-        HTTPCookieStorage.shared.removeCookies(since: Date.distantPast)
+        /// Remove all old cookies
+        HTTPCookieStorage.shared.removeCookies(since: Date())
         Log.info("All cookies deleted")
-                
+        /// We want to remove all website data
         let types = WKWebsiteDataStore.allWebsiteDataTypes()
-        
-        WKWebsiteDataStore.default().fetchDataRecords(ofTypes: types) { records in
-            
-            records.forEach { record in
-                
-                WKWebsiteDataStore
-                    .default()
-                    .removeData(
-                        ofTypes: record.dataTypes,
-                        for: [record],
-                        completionHandler: {})
-                
-                Log.info("Record \(record) deleted")
-            }
-        }
+        /// We fetch all existing records
+        WKWebsiteDataStore.default().fetchDataRecords(
+            ofTypes: types,
+            completionHandler: resetRecords)
     }
-    
+
+    /// Function to remove the data of `WKWebsiteDataRecords`
+    /// - Parameter record: The `WKWebsiteDataRecords`
+    private func resetRecords(_ records: [WKWebsiteDataRecord]) {
+        records.forEach(resetRecord)
+    }
+
+    /// Function to remove the data of a `WKWebsiteDataRecord`
+    /// - Parameter record: The `WKWebsiteDataRecord`
+    private func resetRecord(_ record: WKWebsiteDataRecord) {
+        WKWebsiteDataStore
+            .default()
+            .removeData(
+                ofTypes: record.dataTypes,
+                for: [record],
+                completionHandler: {})
+        Log.info("Record \(record) deleted")
+    }
+
+    /// Function to create a `WKWebViewConfiguration`
+    /// - Returns: The `WKWebViewConfiguration`
     private func getConfig() -> WKWebViewConfiguration {
+        /// Get the `WKUserContentController`
         let controller = getController()
+        /// Initiate the config and attach the controller as user content
         let config = WKWebViewConfiguration()
         config.userContentController = controller
         return config
     }
-    
-    private func getController() -> WKUserContentController {
-        
-        let disableSelectionScript = getScript(source: disableSelectionScriptString)
-        let disableCalloutScript = getScript(source: disableCalloutScriptString)
-        
-        let controller = WKUserContentController()
 
-        controller.addUserScript(disableSelectionScript)
-        controller.addUserScript(disableCalloutScript)
-        
+    /// Function to create a customized `WKUserContentController`
+    /// - Returns: The `WKUserContentController`
+    private func getController() -> WKUserContentController {
+        /// Get an instance of a WebKit controller
+        let controller = WKUserContentController()
+        /// Deactivate selection and callout by adding user scripts
+        controller.addUserScript(getScript(source: Constants.disableSelection))
+        controller.addUserScript(getScript(source: Constants.disableCallout))
         return controller
     }
-    
+
+    /// Convenience function to get a `WKUserScript` from a string
+    /// - Parameter source: The desired string
+    /// - Returns: Returns a script to be embedded into the `WKUserContentController`
     private func getScript(source: String) -> WKUserScript {
         return WKUserScript(
             source: source,
@@ -134,5 +162,4 @@ class webViewScrollViewDelegate: NSObject, UIScrollViewDelegate {
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
         return nil
     }
-
 }
