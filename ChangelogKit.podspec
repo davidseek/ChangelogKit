@@ -42,23 +42,3 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
-
-
-
-Showing Recent Messages
-PhaseScriptExecution [CP]\ Embed\ Pods\ Frameworks /Users/dseek/Library/Developer/Xcode/DerivedData/Voice_Pitch_Analyzer-eiaomtyvvulmbqhdiudxujtdhyki/Build/Intermediates.noindex/Voice\ Pitch\ Analyzer.build/Debug-iphoneos/Voice\ Pitch\ Analyzer.build/Script-A9E6C931F939A7CDB587EB23.sh (in target 'Voice Pitch Analyzer' from project 'Voice Pitch Analyzer')
-    cd /Volumes/workplace/davidseek/voice-pitch-analyzer
-    /bin/sh -c /Users/dseek/Library/Developer/Xcode/DerivedData/Voice_Pitch_Analyzer-eiaomtyvvulmbqhdiudxujtdhyki/Build/Intermediates.noindex/Voice\\\ Pitch\\\ Analyzer.build/Debug-iphoneos/Voice\\\ Pitch\\\ Analyzer.build/Script-A9E6C931F939A7CDB587EB23.sh
-
-mkdir -p /Users/dseek/Library/Developer/Xcode/DerivedData/Voice_Pitch_Analyzer-eiaomtyvvulmbqhdiudxujtdhyki/Build/Products/Debug-iphoneos/Voice Pitch Analyzer.app/Frameworks
-rsync --delete -av --filter P .*.?????? --links --filter "- CVS/" --filter "- .svn/" --filter "- .git/" --filter "- .hg/" --filter "- Headers" --filter "- PrivateHeaders" --filter "- Modules" "/Users/dseek/Library/Developer/Xcode/DerivedData/Voice_Pitch_Analyzer-eiaomtyvvulmbqhdiudxujtdhyki/Build/Products/Debug-iphoneos/Beethoven/Beethoven.framework" "/Users/dseek/Library/Developer/Xcode/DerivedData/Voice_Pitch_Analyzer-eiaomtyvvulmbqhdiudxujtdhyki/Build/Products/Debug-iphoneos/Voice Pitch Analyzer.app/Frameworks"
-building file list ... done
-Beethoven.framework/
-Beethoven.framework/Beethoven
-Beethoven.framework/Info.plist
-
-sent 481361 bytes  received 70 bytes  962862.00 bytes/sec
-total size is 481075  speedup is 1.00
-/Volumes/workplace/davidseek/voice-pitch-analyzer/Pods/Target Support Files/Pods-Voice Pitch Analyzer/Pods-Voice Pitch Analyzer-frameworks.sh: line 131: ARCHS[@]: unbound variable
-Command PhaseScriptExecution failed with a nonzero exit code
-
