@@ -1,5 +1,5 @@
 PODS:
-  - ChangelogKit (0.1.0)
+  - ChangelogKit (0.1.5)
 
 DEPENDENCIES:
   - ChangelogKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ChangelogKit: b46592a901d62e4fa7e315c1279731fc70e78d80
+  ChangelogKit: cb4566e7f80de000c01c6bc1dd38550312bdd78a
 
 PODFILE CHECKSUM: 3a0b64bfe1be262873d0f3ec5a5c83a28748934d
 
