@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ChangelogKit'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'A library that offers tools to display a changelog using webviews and user defaults.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/davidseek/ChangelogKit.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/DavidSeek'
 
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '11.2'
 
   s.source_files = 'ChangelogKit/Classes/**/*'
 
