@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ChangelogKit'
-  s.version          = '0.1.8'
+  s.version          = '0.1.9'
   s.summary          = 'A library that offers tools to display a changelog using webviews and user defaults.'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'ChangelogKit/Classes/**/*'
 
-  s.swift_version = '4.0'
+  s.swift_version = '4.0' 
   
   # s.resource_bundles = {
   #   'ChangelogKit' => ['ChangelogKit/Assets/*.png']
