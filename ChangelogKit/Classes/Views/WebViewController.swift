@@ -88,6 +88,7 @@ class WebViewController: UIViewController {
         webView.rightAnchor.constraint(equalTo: webViewContainer.rightAnchor).isActive = true
         webView.topAnchor.constraint(equalTo: webViewContainer.topAnchor).isActive = true
         webView.bottomAnchor.constraint(equalTo: webViewContainer.bottomAnchor).isActive = true
+        webView.navigationDelegate = self
     }
 
     /// Loads the changelog into the `WKWebView`
@@ -174,5 +175,14 @@ class webViewScrollViewDelegate: NSObject, UIScrollViewDelegate {
     // MARK: - UIScrollViewDelegate
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
         return nil
+    }
+}
+
+// MARK: - WKNavigationDelegate
+extension WebViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, 
+                decidePolicyFor navigationAction: WKNavigationAction,
+                decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        decisionHandler(.allow)
     }
 }
