@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ChangelogKit'
-  s.version          = '0.1.10'
+  s.version          = '0.2.0'
   s.summary          = 'A library that offers tools to display a changelog using webviews and user defaults.'
 
 # This description is used to generate tags and improve search results.
